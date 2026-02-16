@@ -51,6 +51,7 @@ export interface Client {
 
 // Diagram node data
 export interface EntityNodeData {
+  [key: string]: unknown;
   label: string;
   entityType: BusinessStructure;
   shape: EntityShape;
@@ -59,6 +60,7 @@ export interface EntityNodeData {
 
 // Diagram edge data
 export interface RelationshipEdgeData {
+  [key: string]: unknown;
   relationshipType: RelationshipType;
   shares?: number;
 }
